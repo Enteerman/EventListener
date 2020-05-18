@@ -8,4 +8,3 @@ pluginManagement {
     }
 }
 rootProject.name = "EventListener"
-include("example")
