@@ -1,7 +1,5 @@
 package me.enterman.eventlistener
 
-import java.util.function.Function
-
 open class EventBus<T> {
     val subscribers = mutableListOf<EventSubscribers<T>>()
     fun eventSubscribers(op: EventSubscribers<T>.() -> Unit):EventSubscribers<T> = EventSubscribers<T>().also(op).also { subscribers.add(it) }
